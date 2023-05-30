@@ -16,8 +16,8 @@
 
 </script>
 
-<h1>Login</h1>
 <div class="card">
+  <h1>Login</h1>
   <form on:submit="{onSubmit}">
     <table>
       <tr>
@@ -35,39 +35,44 @@
   </form>
 </div>
 
-
-<style lang="scss">
-  h1{
-    margin:0px;
-  }
-  .card{
-    background-color: #b8c0d8;
-    width: fit-content;
-    padding: 30px;
-    margin: auto;
-    margin-top: 20px;
-    vertical-align: middle;
-    input {
-		display: block;
-		width: 193px;
-    height: 25px;
-	  }
-    table{
-      td{
-        padding-bottom: 10px;
+<div>
+  <style lang="scss">
+    h1{
+      margin:0px;
+      margin-bottom: 20px;
+      text-align:center;
+      font-size: 3.2em;
+      line-height: 1.1;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }
+    .card{
+      background-color: #b8c0d8;
+      width: fit-content;
+      padding: 30px;
+      margin: auto;
+      vertical-align: middle;
+      input {
+      display: block;
+      width: 193px;
+      height: 25px;
+      }
+      table{
+        td{
+          padding-bottom: 10px;
+        }
+      }
+      button{
+      display: block;
+      margin: auto;
+      width: 100px;
+      height: 40px;
+        &:hover{
+          background-color: #3e67d9;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+        }
       }
     }
-    button{
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: 40px;
-      &:hover{
-        background-color: #3e67d9;
-        color: black;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    }
-  }
-</style>
+  </style>
+</div>
